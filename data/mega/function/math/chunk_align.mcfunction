@@ -5,9 +5,9 @@ execute store result score @s z run data get entity @s Pos[2]
 scoreboard players operation @s subX = @s x
 scoreboard players operation @s subY = @s y
 scoreboard players operation @s subZ = @s z
-scoreboard players operation @s subY -= base_x constants
+scoreboard players operation @s subX -= base_x constants
 scoreboard players operation @s subY -= base_y constants
-scoreboard players operation @s subY -= base_z constants
+scoreboard players operation @s subZ -= base_z constants
 scoreboard players operation @s subX %= #16 constants
 scoreboard players operation @s subY %= #16 constants
 scoreboard players operation @s subZ %= #16 constants

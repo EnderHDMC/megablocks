@@ -9,8 +9,8 @@ scoreboard objectives add subZ dummy "Sub Z"
 scoreboard objectives add chunkX dummy "Chunk X"
 scoreboard objectives add chunkY dummy "Chunk Y"
 scoreboard objectives add chunkZ dummy "Chunk Z"
-scoreboard objectives add constants dummy "Constants"
 
+scoreboard objectives add constants dummy "Constants"
 scoreboard players set #1 constants 1
 scoreboard players set #16 constants 16
 

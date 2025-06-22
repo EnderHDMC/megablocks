@@ -20,5 +20,12 @@ execute if block ~ ~ ~ purple_wool run summon block_display ~ ~ ~ {block_state:{
 execute if block ~ ~ ~ magenta_wool run summon block_display ~ ~ ~ {block_state:{Name:magenta_wool},Tags:["mega","magenta_wool"]}
 execute if block ~ ~ ~ pink_wool run summon block_display ~ ~ ~ {block_state:{Name:pink_wool},Tags:["mega","pink_wool"]}
 
+execute if block ~ ~ ~ lever[face=floor,facing=south] run summon block_display ~ ~ ~ {block_state:{Name:lever},Tags:["mega_rotate","lever","rot0"]} 
+execute if block ~ ~ ~ lever[face=floor,facing=east] run summon block_display ~ ~ ~ {block_state:{Name:lever},Tags:["mega_rotate","lever","rot90"]} 
+execute if block ~ ~ ~ lever[face=floor,facing=north] run summon block_display ~ ~ ~ {block_state:{Name:lever},Tags:["mega_rotate","lever","rot180"]} 
+execute if block ~ ~ ~ lever[face=floor,facing=west] run summon block_display ~ ~ ~ {block_state:{Name:lever},Tags:["mega_rotate","lever","rot270"]} 
+
 tag @e[tag=mega] add chunk_y
 tag @e[tag=mega] add chunk_once
+tag @e[tag=mega_rotate] add chunk_y
+tag @e[tag=mega_rotate] add chunk_once

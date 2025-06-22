@@ -9,5 +9,7 @@ tag @e[tag=chunk_once] remove chunk_once
 execute at @e[type=area_effect_cloud,tag=chunk_show] run summon area_effect_cloud ~ ~ ~ {Tags:["chunk_temp"],Particle:{type:heart},Radius:1,Duration:2}
 
 # Placement
-execute as @e[tag=mega] at @s run function mega:place
+execute as @e[tag=mega] at @s run function mega:place/simple
+execute as @e[tag=mega_rotate] at @s run function mega:place/rotate
 kill @e[tag=mega]
+kill @e[tag=mega_rotate]
